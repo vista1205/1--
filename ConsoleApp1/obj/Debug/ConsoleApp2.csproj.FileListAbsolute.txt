@@ -5,3 +5,10 @@ C:\Users\Family\Desktop\GeekBrains\Основы языка C#\ConsApp01\ConsoleA
 C:\Users\Family\Desktop\GeekBrains\Основы языка C#\ConsApp01\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CoreCompileInputs.cache
 C:\Users\Family\Desktop\GeekBrains\Основы языка C#\ConsApp01\ConsoleApp2\obj\Debug\ConsoleApp2.exe
 C:\Users\Family\Desktop\GeekBrains\Основы языка C#\ConsApp01\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
+C:\Users\User\Desktop\GeekBrains\Lesson1\1--\ConsoleApp1\bin\Debug\ConsoleApp2.exe.config
+C:\Users\User\Desktop\GeekBrains\Lesson1\1--\ConsoleApp1\bin\Debug\ConsoleApp2.exe
+C:\Users\User\Desktop\GeekBrains\Lesson1\1--\ConsoleApp1\bin\Debug\ConsoleApp2.pdb
+C:\Users\User\Desktop\GeekBrains\Lesson1\1--\ConsoleApp1\obj\Debug\ConsoleApp2.csprojAssemblyReference.cache
+C:\Users\User\Desktop\GeekBrains\Lesson1\1--\ConsoleApp1\obj\Debug\ConsoleApp2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\GeekBrains\Lesson1\1--\ConsoleApp1\obj\Debug\ConsoleApp2.exe
+C:\Users\User\Desktop\GeekBrains\Lesson1\1--\ConsoleApp1\obj\Debug\ConsoleApp2.pdb
