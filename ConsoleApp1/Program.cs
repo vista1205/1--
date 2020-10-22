@@ -6,6 +6,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
+//Домашнее задание выполнил Козлов Виталий
 namespace ConsoleApp2
 {
     class Program
