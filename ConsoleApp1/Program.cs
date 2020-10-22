@@ -16,14 +16,14 @@ namespace ConsoleApp2
             Console.WriteLine(text);
         }
         static void Main(string[] args)
-        {/*
+        {
             #region         // Прграмма Анкета
                
-                Console.WriteLine("программа Анкета.");*/
+                Console.WriteLine("программа Анкета.");
                 Console.Write("Введите ваше Имя: ");
                 string name = Console.ReadLine();
                 Console.Write("Введите вашу Фамилию: ");
-                string surname = Console.ReadLine();/*
+                string surname = Console.ReadLine();
                 Console.Write("Введите ваш Возраст: ");
                 string age = Console.ReadLine();
                 Console.Write("Введите ваш Рост: ");
@@ -81,20 +81,25 @@ namespace ConsoleApp2
             Console.WriteLine($"\nОбмен значениями 2-х переменных без использования 3-ей переменной:\nНовые значения переменных a={a1}, b={b1}");
          
         #endregion
-      */ 
+       
          #region         //Написать программу, которая выводит на экран ваше имя, фамилию и город проживания
 
             Console.Write("введите Ваш город проживания: ");
             string city = Console.ReadLine();
-            //Console.WriteLine($"{name} {surname}, ты живёшь в городе {city}");
+            Console.WriteLine($"{name} {surname}, ты живёшь в городе {city}");
             string text = name + " " + surname + " ты живёшь в городе " + city;
-            //Console.SetCursorPosition((Console.WindowWidth - text.Length) / 2, Console.WindowHeight / 2);
-            //Console.WriteLine(text);
+            Console.SetCursorPosition((Console.WindowWidth - text.Length) / 2, Console.WindowHeight / 2);
+            Console.WriteLine(text);
+            Console.WriteLine("\nВывод сообщения через функцию:");
             int x=(Console.WindowWidth-text.Length)/ 2;
             int y = Console.WindowHeight / 2;
             Print(text, x, y);
+            Console.WriteLine("\nВывод сообщения через класс:");
+            Lesson01 lesson = new Lesson01();
+            lesson.PrintClass(text, x, y);
 
-        #endregion
+            #endregion
+            lesson.Pause();
             Console.ReadKey();
         }
     }
