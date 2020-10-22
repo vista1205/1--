@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,15 +10,20 @@ namespace ConsoleApp2
 {
     class Program
     {
+       static void Print(string text, int x, int y)
+        {
+            Console.SetCursorPosition(x, y);
+            Console.WriteLine(text);
+        }
         static void Main(string[] args)
         {/*
             #region         // Прграмма Анкета
                
-                Console.WriteLine("программа Анкета.");
+                Console.WriteLine("программа Анкета.");*/
                 Console.Write("Введите ваше Имя: ");
                 string name = Console.ReadLine();
                 Console.Write("Введите вашу Фамилию: ");
-                string surname = Console.ReadLine();
+                string surname = Console.ReadLine();/*
                 Console.Write("Введите ваш Возраст: ");
                 string age = Console.ReadLine();
                 Console.Write("Введите ваш Рост: ");
@@ -52,7 +58,7 @@ namespace ConsoleApp2
             double r = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
             Console.WriteLine($"Расстояние между точками с координатами A1({x1};{y1}) и A2({x2};{y2}) равно: {r:f2}");
         #endregion
-*/
+
         #region         //Программа для обмена значениями двух переменных
 
             Console.WriteLine("\nПрограмма для обмена значениями двух переменных");
@@ -75,17 +81,20 @@ namespace ConsoleApp2
             Console.WriteLine($"\nОбмен значениями 2-х переменных без использования 3-ей переменной:\nНовые значения переменных a={a1}, b={b1}");
          
         #endregion
-/*        
+      */ 
          #region         //Написать программу, которая выводит на экран ваше имя, фамилию и город проживания
 
             Console.Write("введите Ваш город проживания: ");
             string city = Console.ReadLine();
-            Console.WriteLine($"{name} {surname}, ты живёшь в городе {city}");
+            //Console.WriteLine($"{name} {surname}, ты живёшь в городе {city}");
             string text = name + " " + surname + " ты живёшь в городе " + city;
-            Console.SetCursorPosition((Console.WindowWidth - text.Length) / 2, Console.WindowHeight / 2);
-            Console.WriteLine(text);
+            //Console.SetCursorPosition((Console.WindowWidth - text.Length) / 2, Console.WindowHeight / 2);
+            //Console.WriteLine(text);
+            int x=(Console.WindowWidth-text.Length)/ 2;
+            int y = Console.WindowHeight / 2;
+            Print(text, x, y);
 
-        #endregion*/
+        #endregion
             Console.ReadKey();
         }
     }
